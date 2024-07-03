@@ -12,22 +12,15 @@ class _PantallaSearchState extends State<PantallaSearch> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-        child: Scaffold(
-          appBar: AppBar(
-            title: const Text('Navegacion entre pantallas'),
-          ),
-          body: const Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text('Buscar: Segunda Pantalla'),
-              ],
-            ),
-          ),
+    return const Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Buscar: Segunda Pantalla'),
+          ],
         ),
-        onWillPop: () async {
-          return false;
-        });
+      ),
+    );
   }
 }

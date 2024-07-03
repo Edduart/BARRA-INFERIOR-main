@@ -12,8 +12,9 @@ class MyApp extends StatelessWidget {
       title: "Material App",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        useMaterial3: true,
+        primarySwatch: Colors.green,
       ),
+      color: Colors.amberAccent,
       home: const MainScreen(),
     );
   }

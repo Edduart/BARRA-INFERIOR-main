@@ -16,11 +16,6 @@ class _PantallaHomeState extends State<PantallaHome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.blue,
-          title: const Text('Navegacion entre pantallas',
-              style: TextStyle(color: Colors.white)),
-        ),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,

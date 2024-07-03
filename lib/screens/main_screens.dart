@@ -10,7 +10,6 @@ class MainScreen extends StatefulWidget {
   State<MainScreen> createState() => _MainScreensState();
 }
 
-
 class _MainScreensState extends State<MainScreen> {
   int _selectedIndex = 0;
 
@@ -24,7 +23,6 @@ class _MainScreensState extends State<MainScreen> {
     setState(() {
       _selectedIndex = index;
     });
-
   }
 
   @override
@@ -32,6 +30,11 @@ class _MainScreensState extends State<MainScreen> {
     //final colors = Theme.of(context).colorScheme;
 
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: const Text('Navegacion entre pantallas',
+            style: TextStyle(color: Colors.white)),
+      ),
       body: IndexedStack(
         index: _selectedIndex,
         children: _widgetOptions,

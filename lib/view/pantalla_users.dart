@@ -12,18 +12,15 @@ class _PantallaUsersState extends State<PantallaUsers> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: const Text('Navegacion entre pantallas',
-              style: TextStyle(color: Colors.white)),
+    return const Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text('Perfil: Tercera Pantalla'),
+          ],
         ),
-        body: const Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text('Buscar: Segunda Pantalla'),
-            ],
-          ),
-        ));
+      ),
+    );
   }
 }
